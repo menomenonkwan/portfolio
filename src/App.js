@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import './styles/mobile.css';
+import './styles/portfolio.css';
+import { Switch, Route, useLocation } from "react-router-dom";
+import background from './components/assets/images/background_image.jpg';
+import Home from './components/Home';
+import Portfolio from './components/Portfolio';
+import NotFound from './components/NotFound';
+import { AnimatePresence } from 'framer-motion';
+import BurgerMenu from './components/layout/BurgerMenu';
 
 function App() {
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ backgroundImage: `url(${background})` }}>
+      <AnimatePresence initial={false}> 
+        <BurgerMenu />
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/" component={Home}/>
+          <Route path="/portfolio" component={Portfolio} />
+          <Route component={NotFound} />
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }

@@ -1,0 +1,178 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+.burger {
+  display: none;
+}
+
+/* ----------------------------------------------- */
+/* BURGER MENU */
+/* ----------------------------------------------- */
+@media (max-width: 700px) {
+  .burger {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    top: 0rem;
+    height: 65px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .burger-middle {
+    background: var(--main-blue);
+    position: absolute;
+    right: 1.5rem;
+    top: calc(50% - 3px);
+    width: 30px;
+    height: 3px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5rem;
+  }
+
+  .burger-middle::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    width: 30px;
+    height: 3px;
+    background: var(--main-blue);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5rem;
+  }
+
+  .burger-middle::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 30px;
+    height: 3px;
+    background: var(--main-blue);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5rem;
+  }
+
+  .burger .open {
+    background: transparent;
+  }
+
+  .open::before {
+    -webkit-transform: rotate(45deg) translate(5px, 8px);
+    -ms-transform: rotate(45deg) translate(5px, 8px);
+    transform: rotate(45deg) translate(5px, 8px);
+    background: var(--main-brightblue);
+    -webkit-box-shadow: 0 0 3px var(--main-black);
+    box-shadow: 0 0 3px var(--main-black);
+  }
+
+  .open::after {
+    width: 28px;
+    -webkit-transform: rotate(-45deg) translate(3px, -7px);
+    -ms-transform: rotate(-45deg) translate(3px, -7px);
+    transform: rotate(-45deg) translate(3px, -7px);
+    background: var(--main-brightblue);
+    -webkit-box-shadow: 0 0 3px var(--main-black);
+    box-shadow: 0 0 3px var(--main-black);
+  }
+
+  .active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .active h3 {
+    margin: 0 auto;
+    padding: 8rem 0;
+  }
+
+  .active ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .active a {
+    text-align: center;
+    font-size: 4rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .portfolio-main {
+    margin-top: 10rem;
+  }
+  .portfolio-mobile-menu {
+    background: var(--main-darkblue);
+    position: fixed;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 1;
+  }
+  .portfolio-mobile-menu h3 {
+    color: var(--secondary-color);
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+  }
+
+  .box {
+    -webkit-transform: rotateX(7.5deg) rotateY(180deg);
+    transform: rotateX(7.5deg) rotateY(180deg);
+  }
+  .box::after {
+    -webkit-transform: rotateX(0) translate(0) translateZ(0);
+    transform: rotateX(0) translate(0) translateZ(0);
+    -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+  }
+  .grid {
+    gap: 7rem;
+  }
+
+  .description a {
+    color: var(--secondary-color);
+    background: var(--main-darkblue);
+  }
+
+  .description a:hover {
+    color: var(--main-brightblue);
+    background: var(--main-blue);
+  }
+}
