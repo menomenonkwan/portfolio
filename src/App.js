@@ -2,7 +2,6 @@ import './styles/App.css';
 import './styles/mobile.css';
 import './styles/portfolio.css';
 import { Switch, Route, useLocation } from "react-router-dom";
-import background from './components/assets/images/background_image.jpg';
 import Home from './components/Home';
 import Portfolio from './components/Portfolio';
 import NotFound from './components/NotFound';
@@ -12,7 +11,6 @@ import Background from './components/layout/Background';
 
 function App() {
   const location = useLocation();
-// style={{ backgroundImage: `url(${background})` }}
   return (
     <div className="App" >
       <Background />
