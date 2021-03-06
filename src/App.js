@@ -8,12 +8,14 @@ import Portfolio from './components/Portfolio';
 import NotFound from './components/NotFound';
 import { AnimatePresence } from 'framer-motion';
 import BurgerMenu from './components/layout/BurgerMenu';
+import Background from './components/layout/Background';
 
 function App() {
   const location = useLocation();
-
+// style={{ backgroundImage: `url(${background})` }}
   return (
-    <div className="App" style={{ backgroundImage: `url(${background})` }}>
+    <div className="App" >
+      <Background />
       <AnimatePresence initial={false}> 
         <BurgerMenu />
         <Switch location={location} key={location.pathname}>
