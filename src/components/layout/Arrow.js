@@ -27,7 +27,7 @@ const Arrow = ({ location }) => {
         whileHover={{scale: 1.2}} 
         whileTap={{scale: 0.9}}
       > 
-        <Link to={location} ><FaArrowCircleDown /></Link>   
+        <Link to={location} smooth><FaArrowCircleDown /></Link>   
       </motion.div>
     </AnimatePresence>
   );

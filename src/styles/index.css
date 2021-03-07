@@ -93,34 +93,8 @@ header {
   position: absolute;
   z-index: 1;
   padding: 15px 10px 0 10px;
-  top: -100vh;
-  -webkit-animation: dropdown 2s ease forwards;
-  animation: dropdown 2s ease forwards;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
 }
 
-@-webkit-keyframes dropdown {
-  0% {
-    top: -100vh;
-    opacity: 0;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes dropdown {
-  0% {
-    top: -100vh;
-    opacity: 0;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
-  }
-}
 .heading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,7 +354,7 @@ footer p {
   color: var(--main-black);
   text-decoration: none;
   display: block;
-  padding: 1.5rem 2.5rem;
+  padding: 1.5rem 3rem;
   font-size: 2rem;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;

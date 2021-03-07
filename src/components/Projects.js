@@ -29,32 +29,49 @@ const Projects = () => {
 
   return ( 
     <div className="container">
-    <div id="projects-card">
-      <h3>SOME OF MY PROJECTS</h3>
-      <div className="projects-grid">
-        {projectLinks.map(link => (
-          <div className="grid-item" key={link.id}>
-            <h5>{ link.name }</h5>
-            <div className="inner" style={{ backgroundImage: `url(${ link.image })` }}>     
-              <div className="desc">
-                {(link.url).startsWith('/')
-                  ? <Link to={ link.url }>
-                      View <FaExternalLinkSquareAlt />
-                    </Link>
-                  : <a href={ link.url } target="_blank" rel="noreferrer">
-                      View <FaExternalLinkSquareAlt />
-                    </a>
-                }
-                <p>
-                  { link.description}
-                </p>
-              </div> 
-            </div>  
-          </div>
-        ))}
+      <div id="projects-card">
+        <h3>SOME OF MY PROJECTS</h3>
+        <div className="projects-grid">
+          {projectLinks.map(link => (
+            ((link.url).startsWith('/')
+              ? 
+              <div className="grid-item" key={link.id}>
+                <Link to={ link.url } style={{textDecoration: 'none'}}>
+                  <h5>{ link.name }</h5>
+                  <div className="inner" style={{ backgroundImage: `url(${ link.image })` }}>     
+                    <div className="desc">
+                      <button type="button">
+                        View <FaExternalLinkSquareAlt />
+                      </button>
+                      <p>
+                        { link.description}
+                      </p>
+                    </div> 
+                  </div>  
+                </Link>
+              </div>
+              : 
+              <div className="grid-item" key={link.id}>
+                <a href={ link.url } target="_blank" rel="noreferrer" style={{textDecoration: 'none'}}>
+                  <h5>{ link.name }</h5>
+                  <div className="inner" style={{ backgroundImage: `url(${ link.image })` }}>     
+                    <div className="desc">
+                      <button type="button">
+                        View <FaExternalLinkSquareAlt />
+                      </button>
+                      <p>
+                        { link.description}
+                      </p>
+                    </div> 
+                  </div>  
+                </a>
+              </div>
+            )            
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 }
 export default Projects;
+

@@ -367,9 +367,10 @@ h2 {
   transform: scale(0);
 }
 
-.desc a {
+.desc button {
   background: var(--main-blue);
   border-radius: 2rem;
+  border: none;
   padding: 0.5rem 2rem;
   text-decoration: none;
   color: var(--main-brightblue);
@@ -382,14 +383,21 @@ h2 {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  outline: transparent;
 }
 
-.grid-item:hover .desc > a,
+.grid-item:hover .desc > button,
 .grid-item:hover .desc > p {
+  cursor: pointer;
   opacity: 1;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+.grid-item button:hover {
+  background: var(--main-darkblue);
+  color: var(--secondary-color);
 }
 
 .grid-item:hover h5 {
@@ -398,8 +406,7 @@ h2 {
 }
 
 .grid-item a:hover {
-  background: var(--main-darkblue);
-  color: var(--secondary-color);
+  color: var(--main-darkblue);
 }
 
 .grid-item:hover .inner {
@@ -434,7 +441,7 @@ h2 {
   .inner .desc p {
     display: none;
   }
-  .inner .desc a {
+  .inner .desc button {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
