@@ -153,8 +153,8 @@
   }
 
   .box {
-    -webkit-transform: rotateX(7.5deg) rotateY(180deg);
-    transform: rotateX(7.5deg) rotateY(180deg);
+    -webkit-transform: translateZ(0px) rotateX(7.5deg) rotateY(180deg);
+    transform: translateZ(0px) rotateX(7.5deg) rotateY(180deg);
   }
   .box::after {
     -webkit-transform: rotateX(0) translate(0) translateZ(0);
