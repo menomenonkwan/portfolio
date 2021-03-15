@@ -71,9 +71,9 @@ const portfolioProjects = [
   { 
     id: 4, 
     name: 'Yoga App', 
-    description: 'Built with React. This is a timer for your yoga sessions. Breath', 
+    description: 'Built with React Hooks and Firebase. This is a timer for your yoga sessions. Breath', 
     src: ImgFour, 
-    link: 'https://menomenonkwan.github.io/yoga-timer/' 
+    link: 'https://brannonlee-yoga-app.netlify.app/program' 
 },
   { 
     id: 5, 
