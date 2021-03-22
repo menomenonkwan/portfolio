@@ -14,7 +14,7 @@ const About = () => {
         <Link to={Resume} className="resume" target="_blank">Resum&eacute; <FaRegFileAlt /></Link>
       </div>
 
-    </div>
+    </div> 
     </div>
    );
 }
