@@ -41,7 +41,7 @@ const projectLinks = [
 const Bio = () => {
   return (
     <React.Fragment><p>Hey there! I'm <strong>Brannon Lee</strong>, and I am a Los Angeles based web developer, specializing in <strong>JavaScript, CSS, and HTML</strong>. I like to design, build, and tinker with websites. I also have extensive professional experience in working with teams and meeting customer needs. Don't believe me? Take a look at my resum&eacute; below <FaArrowCircleDown /></p>
-    <p>I'm also currently working on increasing my front-end developmental knowledge with <strong>React</strong>.</p>
+    <p>I'm also currently working on increasing my front-end developmental knowledge in <strong>React</strong>, <strong>NextJS</strong>, and <strong>TypeScript</strong>.</p>
     </React.Fragment>
   )
 }
@@ -73,7 +73,7 @@ const portfolioProjects = [
     name: 'Yoga App', 
     description: 'Built with React Hooks and Firebase. This is a timer for your yoga sessions. Breath', 
     src: ImgFour, 
-    link: 'https://brannonlee-yoga-app.netlify.app/program' 
+    link: 'https://brannonlee-yoga-app.netlify.app/' 
 },
   { 
     id: 5, 
