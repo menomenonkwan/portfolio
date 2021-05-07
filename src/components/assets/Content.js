@@ -41,7 +41,7 @@ const projectLinks = [
 const Bio = () => {
   return (
     <React.Fragment><p>Hey there! I'm <strong>Brannon Lee</strong>, and I am a Los Angeles based web developer, specializing in <strong>JavaScript, CSS, and HTML</strong>. I like to design, build, and tinker with websites. I also have extensive professional experience in working with teams and meeting customer needs. Don't believe me? Take a look at my resum&eacute; below <FaArrowCircleDown /></p>
-    <p>I'm also currently working on increasing my front-end developmental knowledge in <strong>React</strong>, <strong>NextJS</strong>, and <strong>TypeScript</strong>.</p>
+    <p>I'm currently working to improve my front-end knowledge with <strong>React</strong> and <strong>TypeScript</strong>, while strenthening my back-end knowledge with <strong>NodeJs</strong> and <strong>ExpressJs</strong>.</p>
     </React.Fragment>
   )
 }
