@@ -529,14 +529,20 @@ h2 {
   -webkit-filter: brightness(1.05);
   filter: brightness(1.05);
 }
-
+.prof-pic {
+  border-radius: 50%;
+  margin: 25px auto;
+  width: 135px;
+  height: 175px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+}
 .resume {
   font-family: var(--secondary-font), sans-serif;
   text-decoration: none;
   font-size: 3rem;
   color: var(--main-blue);
   padding: 5px;
-  margin-top: 15px;
+  margin: 15px 0 50px 0;
   border-radius: 3px;
   position: relative;
 }

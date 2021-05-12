@@ -46,6 +46,14 @@ const Bio = () => {
   )
 }
 
+const BioExtended = () => {
+  return (
+    <React.Fragment>
+      <p>I'm an artist at heart, having spent years studying film and moving to Los Angeles to pursue a career in music. Although I still consider myself the coolest guitarist in Hollywood, I decided to move my creative focus to web development and design, and think it's one of the best choices I've ever made.</p>
+    </React.Fragment>
+  )
+}
+
 const portfolioProjects = [
   { 
     id: 1, 
@@ -118,5 +126,5 @@ const portfolioProjects = [
   },
 ];
 
-export { projectLinks, Bio, portfolioProjects }
+export { projectLinks, Bio, BioExtended, portfolioProjects }
 
