@@ -2,16 +2,16 @@ import React from 'react';
 import BGSiteOne from './images/calahan.png';
 import BGSiteTwo from './images/travel.png';
 import BGSiteThree from './images/projects.png';
-import ImgOne from './images/weather.png';
-import ImgTwo from './images/trivia.png';
-import ImgThree from './images/restaurant.png';
-import ImgFour from './images/yoga.png';
-import ImgFive from './images/planner.png';
-import ImgSix from './images/matching.png';
-import ImgSeven from './images/memory.png';
-import ImgEight from './images/cow.png';
-import ImgNine from './images/clocks.png';
-import ImgTen from './images/scorecard.png';
+import WeatherImg from './images/weather.png';
+import RestaurantImg from './images/restaurant.png';
+import TriviaImg from './images/trivia.png';
+import YogaImg from './images/yoga.png';
+import PlannerImg from './images/planner.png';
+import MatchingImg from './images/matching.png';
+import MemoryImg from './images/memory.png';
+import CSSImg from './images/cow.png';
+import ClocksImg from './images/clocks.png';
+import BlogImg from './images/reviews.png';
 import { FaArrowCircleDown } from 'react-icons/fa';
 
 const projectLinks = [
@@ -59,70 +59,72 @@ const portfolioProjects = [
     id: 1, 
     name: 'Weather App', 
     description: 'Built using the openweathermap.org API, along with a nifty JS clock', 
-    src: ImgOne, 
+    src: WeatherImg, 
     link: 'https://menomenonkwan.github.io/weather-app/' 
   },
+
   { 
-    id: 2, 
-    name: 'Trivia App', 
-    description: 'Guess away... Built with JavaScript, using the Open Trivia Database API, and async/await. Enjoy!', 
-    src: ImgTwo, 
-    link: 'https://menomenonkwan.github.io/trivia-game/' 
-  },
-  { 
-    id: 3,
+    id: 2,
     name: 'Restaurant website', 
     description: 'Restaurant website, built around webpack and js modules. Yummers', 
-    src: ImgThree, 
+    src: RestaurantImg, 
     link: 'https://menomenonkwan.github.io/restaurant/' 
   },
   { 
-    id: 4, 
+    id: 3, 
     name: 'Yoga App', 
     description: 'Built with React Hooks and Firebase. This is a timer for your yoga sessions. Breath', 
-    src: ImgFour, 
+    src: YogaImg, 
     link: 'https://brannonlee-yoga-app.netlify.app/' 
-},
+  },
+  { 
+  id: 4, 
+  name: 'Food Blog', 
+  description: 'Blog of tasty food nonsense, built with GatsbyJS', 
+  src: BlogImg, 
+  link: 'https://restaurantreviewsmain.gatsbyjs.io/' 
+  },
   { 
     id: 5, 
-    name: 'Personal Planner', 
-    description: 'Using vanilla JavaScript, webpack, and modules. For those who forget things.', 
-    src: ImgFive, 
-    link: 'https://menomenonkwan.github.io/lists/#' 
-},
-  { 
-    id: 6, 
     name: 'Matching Game', 
     description: 'JavaScript card matching game. Using css animations and async/await... Have fun.', 
-    src: ImgSix, 
+    src: MatchingImg, 
     link: 'https://codepen.io/menomenonkwan/full/BaKrZJm' 
-},
+  },
   { 
-    id: 7, 
+    id: 6, 
     name: 'Memory - Game', 
     description: 'Built with React. It\'s amazing how many things look a like', 
-    src: ImgSeven, 
+    src: MemoryImg, 
     link: 'https://menomenonkwan.github.io/memory-game/' 
-},
+  },
   { 
-    id: 8, 
+    id: 7, 
     name: 'CSS Animations', 
     description: 'Just hanging around... Made with the magic of CSS animations', 
-    src: ImgEight, 
-    link: 'https://menomenonkwan.github.io/floating-cow/' },
+    src: CSSImg, 
+    link: 'https://menomenonkwan.github.io/floating-cow/' 
+  },
   { 
-    id: 9, 
+    id: 8, 
     name: 'World Clocks', 
     description: 'Keeping track of time around the world. Using JS and SASS', 
-    src: ImgNine, 
+    src: ClocksImg, 
     link: 'https://menomenonkwan.github.io/world-clocks/' 
   },
   { 
+    id: 9, 
+    name: 'Trivia App', 
+    description: 'Guess away... Built with JavaScript, using the Open Trivia Database API, and async/await. Enjoy!', 
+    src: TriviaImg, 
+    link: 'https://menomenonkwan.github.io/trivia-game/' 
+  },
+  { 
     id: 10, 
-    name: 'Score Card', 
-    description: 'For board and card gamers alike... more cowbell', 
-    src: ImgTen, 
-    link: 'https://brannonlee-scorecard.netlify.app/' 
+    name: 'Personal Planner', 
+    description: 'Using vanilla JavaScript, webpack, and modules. For those who forget things.', 
+    src: PlannerImg, 
+    link: 'https://menomenonkwan.github.io/lists/#' 
   },
 ];
 
