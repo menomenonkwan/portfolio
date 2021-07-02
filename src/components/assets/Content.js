@@ -7,7 +7,7 @@ import RestaurantImg from './images/restaurant.png';
 import TriviaImg from './images/trivia.png';
 import YogaImg from './images/yoga.png';
 import PlannerImg from './images/planner.png';
-import MatchingImg from './images/matching.png';
+import RecipeImg from './images/recipe.png';
 import MemoryImg from './images/memory.png';
 import CSSImg from './images/cow.png';
 import ClocksImg from './images/clocks.png';
@@ -86,10 +86,10 @@ const portfolioProjects = [
   },
   { 
     id: 5, 
-    name: 'Matching Game', 
-    description: 'JavaScript card matching game. Using css animations and async/await... Have fun.', 
-    src: MatchingImg, 
-    link: 'https://codepen.io/menomenonkwan/full/BaKrZJm' 
+    name: 'Recipe App', 
+    description: 'The hungry helper. Using ReactJS, find something tasty', 
+    src: RecipeImg, 
+    link: 'https://menomenonkwan.github.io/recipe-roulette/' 
   },
   { 
     id: 6, 
