@@ -8,6 +8,7 @@ import TriviaImg from './images/trivia.png';
 import YogaImg from './images/yoga.png';
 import PlannerImg from './images/planner.png';
 import RecipeImg from './images/recipe.png';
+import StoreImg from './images/store.png';
 import MemoryImg from './images/memory.png';
 import CSSImg from './images/cow.png';
 import ClocksImg from './images/clocks.png';
@@ -62,27 +63,26 @@ const portfolioProjects = [
     src: WeatherImg, 
     link: 'https://menomenonkwan.github.io/weather-app/' 
   },
-
   { 
-    id: 2,
-    name: 'Restaurant website', 
-    description: 'Restaurant website, built around webpack and js modules. Yummers', 
-    src: RestaurantImg, 
-    link: 'https://menomenonkwan.github.io/restaurant/' 
+    id: 2, 
+    name: 'Shopping Website', 
+    description: 'Shop for things and stuff on this website built with React, MaterialUI, and Framer Motion.', 
+    src: StoreImg, 
+    link: 'https://menomenonkwan.github.io/the-clothing-store/' 
   },
   { 
     id: 3, 
+    name: 'Food Blog', 
+    description: 'Blog of tasty food nonsense, built with GatsbyJS', 
+    src: BlogImg, 
+    link: 'https://restaurantreviewsmain.gatsbyjs.io/' 
+  },
+  { 
+    id: 4, 
     name: 'Yoga App', 
     description: 'Built with React Hooks and Firebase. This is a timer for your yoga sessions. Breath', 
     src: YogaImg, 
     link: 'https://brannonlee-yoga-app.netlify.app/' 
-  },
-  { 
-  id: 4, 
-  name: 'Food Blog', 
-  description: 'Blog of tasty food nonsense, built with GatsbyJS', 
-  src: BlogImg, 
-  link: 'https://restaurantreviewsmain.gatsbyjs.io/' 
   },
   { 
     id: 5, 
@@ -92,40 +92,41 @@ const portfolioProjects = [
     link: 'https://menomenonkwan.github.io/recipe-roulette/' 
   },
   { 
-    id: 6, 
+    id: 6,
+    name: 'Restaurant website', 
+    description: 'Restaurant website, built around webpack and js modules. Yummers', 
+    src: RestaurantImg, 
+    link: 'https://menomenonkwan.github.io/restaurant/' 
+  },
+  { 
+    id: 7, 
     name: 'Memory - Game', 
     description: 'Built with React. It\'s amazing how many things look a like', 
     src: MemoryImg, 
     link: 'https://menomenonkwan.github.io/memory-game/' 
   },
   { 
-    id: 7, 
+    id: 8, 
     name: 'CSS Animations', 
     description: 'Just hanging around... Made with the magic of CSS animations', 
     src: CSSImg, 
     link: 'https://menomenonkwan.github.io/floating-cow/' 
   },
   { 
-    id: 8, 
+    id: 9, 
     name: 'World Clocks', 
     description: 'Keeping track of time around the world. Using JS and SASS', 
     src: ClocksImg, 
     link: 'https://menomenonkwan.github.io/world-clocks/' 
   },
   { 
-    id: 9, 
+    id: 10, 
     name: 'Trivia App', 
     description: 'Guess away... Built with JavaScript, using the Open Trivia Database API, and async/await. Enjoy!', 
     src: TriviaImg, 
     link: 'https://menomenonkwan.github.io/trivia-game/' 
   },
-  { 
-    id: 10, 
-    name: 'Personal Planner', 
-    description: 'Using vanilla JavaScript, webpack, and modules. For those who forget things.', 
-    src: PlannerImg, 
-    link: 'https://menomenonkwan.github.io/lists/#' 
-  },
+
 ];
 
 export { projectLinks, Bio, BioExtended, portfolioProjects }
