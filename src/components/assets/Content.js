@@ -4,9 +4,8 @@ import BGSiteTwo from './images/travel.png';
 import BGSiteThree from './images/projects.png';
 import WeatherImg from './images/weather.png';
 import RestaurantImg from './images/restaurant.png';
-import TriviaImg from './images/trivia.png';
 import YogaImg from './images/yoga.png';
-import PlannerImg from './images/planner.png';
+import NewsImg from './images/news.png';
 import RecipeImg from './images/recipe.png';
 import StoreImg from './images/store.png';
 import MemoryImg from './images/memory.png';
@@ -100,33 +99,32 @@ const portfolioProjects = [
   },
   { 
     id: 7, 
+    name: 'News App', 
+    description: 'Read All About It! A React news app built using the New York Times API.', 
+    src: NewsImg, 
+    link: 'https://menomenonkwan.github.io/react-news-app/' 
+  },
+  { 
+    id: 8, 
     name: 'Memory - Game', 
     description: 'Built with React. It\'s amazing how many things look a like', 
     src: MemoryImg, 
     link: 'https://menomenonkwan.github.io/memory-game/' 
   },
   { 
-    id: 8, 
+    id: 9, 
     name: 'CSS Animations', 
     description: 'Just hanging around... Made with the magic of CSS animations', 
     src: CSSImg, 
     link: 'https://menomenonkwan.github.io/floating-cow/' 
   },
   { 
-    id: 9, 
+    id: 10, 
     name: 'World Clocks', 
     description: 'Keeping track of time around the world. Using JS and SASS', 
     src: ClocksImg, 
     link: 'https://menomenonkwan.github.io/world-clocks/' 
   },
-  { 
-    id: 10, 
-    name: 'Trivia App', 
-    description: 'Guess away... Built with JavaScript, using the Open Trivia Database API, and async/await. Enjoy!', 
-    src: TriviaImg, 
-    link: 'https://menomenonkwan.github.io/trivia-game/' 
-  },
-
 ];
 
 export { projectLinks, Bio, BioExtended, portfolioProjects }
