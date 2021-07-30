@@ -1,14 +1,14 @@
 import React from 'react';
 import BGSiteOne from './images/calahan.png';
-import BGSiteTwo from './images/travel.png';
 import BGSiteThree from './images/projects.png';
+import BGSiteTwo from './images/ditg.png';
 import WeatherImg from './images/weather.png';
 import RestaurantImg from './images/restaurant.png';
 import YogaImg from './images/yoga.png';
 import NewsImg from './images/news.png';
 import RecipeImg from './images/recipe.png';
 import StoreImg from './images/store.png';
-import MemoryImg from './images/memory.png';
+import TravelImg from './images/travel.png';
 import CSSImg from './images/cow.png';
 import ClocksImg from './images/clocks.png';
 import BlogImg from './images/reviews.png';
@@ -24,10 +24,10 @@ const projectLinks = [
 },
 {
   id: 2,
-  name: 'React Travel App',
-  url: 'https://menomenonkwan.github.io/travel-co/',
+  name: 'Band website',
+  url: 'https://drunkinthegarage.netlify.app/',
   image: BGSiteTwo,
-  description: 'A sample website, built with React',
+  description: 'Website for previous client, DrunkInTheGarage, built with GatsbyJS',
 },
 {
   id: 3,
@@ -78,10 +78,10 @@ const portfolioProjects = [
   },
   { 
     id: 4, 
-    name: 'Yoga App', 
-    description: 'Built with React Hooks and Firebase. This is a timer for your yoga sessions. Breath', 
-    src: YogaImg, 
-    link: 'https://brannonlee-yoga-app.netlify.app/' 
+    name: 'Travel App',
+    description: 'A sample travel website, built with React',
+    src: TravelImg,
+    link: 'https://menomenonkwan.github.io/travel-co/',
   },
   { 
     id: 5, 
@@ -106,10 +106,10 @@ const portfolioProjects = [
   },
   { 
     id: 8, 
-    name: 'Memory - Game', 
-    description: 'Built with React. It\'s amazing how many things look a like', 
-    src: MemoryImg, 
-    link: 'https://menomenonkwan.github.io/memory-game/' 
+    name: 'Yoga App', 
+    description: 'Built with React Hooks and Firebase. This is a timer for your yoga sessions. Breath', 
+    src: YogaImg, 
+    link: 'https://brannonlee-yoga-app.netlify.app/' 
   },
   { 
     id: 9, 
