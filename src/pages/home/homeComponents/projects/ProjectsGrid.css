@@ -1,0 +1,226 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+#projects {
+  color: var(--white);
+  background: var(--primaryDark);
+}
+#projects .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+}
+.projects {
+  width: 90%;
+  margin: 5em auto;
+}
+.projects h2 {
+  margin-bottom: 1em;
+}
+.projects-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 60px;
+}
+
+/* ----------------------------- */
+/*  GRID - MEDIA QUERY */
+/* ----------------------------- */
+@media (min-width: 750px) {
+  .projects {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+/* ----------------------------- */
+/*  CARD */
+/* ----------------------------- */
+.project-frame {
+  -webkit-perspective: 400px;
+  perspective: 400px;
+}
+.projects-card {
+  background: var(--primaryColor);
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  -webkit-transition: -webkit-box-shadow 1s ease;
+  transition: -webkit-box-shadow 1s ease;
+  -o-transition: box-shadow 1s ease;
+  transition: box-shadow 1s ease;
+  transition: box-shadow 1s ease, -webkit-box-shadow 1s ease;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.projects-card:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.projects .avatar {
+  font-size: 2em;
+  font-family: var(--primaryFont);
+  background-color: var(--black);
+  padding: 5px 10px;
+  position: relative;
+}
+.projects .avatar::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  height: 2px;
+  width: 90%;
+  border-radius: 25%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--secondaryColor)),
+    to(transparent)
+  );
+  background: -o-linear-gradient(left, var(--secondaryColor), transparent);
+  background: linear-gradient(to right, var(--secondaryColor), transparent);
+}
+
+/* ----------------------------- */
+/*  CARD CONTENT */
+/* ----------------------------- */
+.card-content {
+  border-left: 10px solid var(--secondaryColor);
+  background: var(--white);
+  height: 100%;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+.project-description {
+  color: var(--primaryDark);
+  font-size: 1.45em;
+}
+.project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.project-links .btn {
+  background: var(--primaryColor);
+  color: var(--white);
+  border-radius: 0;
+  border: 2px solid var(--primaryColor);
+  display: block;
+  font-size: 1.5em;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.25em 0.75em;
+  margin: 0.75em 1em 1em 0;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12);
+}
+.project-links .btn:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: var(--primaryColor);
+  -webkit-filter: brightness(1.25);
+  filter: brightness(1.25);
+  background: transparent;
+  color: var(--primaryColor);
+}
+.project-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: auto;
+}
+.project-tools span {
+  line-height: initial;
+  display: block;
+  line-height: 0.85;
+  padding-right: 0.5em;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  color: var(--primaryDark);
+}
+.project-tools span:hover {
+  color: var(--primaryColor);
+}
+.project-tools svg {
+  font-size: 3em;
+}
+.project-tooltip {
+  opacity: 0;
+  border-radius: 2px;
+  background: var(--black);
+  position: absolute;
+  color: var(--white);
+  top: -3.5em;
+  left: -1em;
+  padding: 1em;
+  font-size: 1.25em;
+  z-index: -1;
+  -webkit-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+.tooltip-arrow {
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease;
+  -o-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+  position: absolute;
+  top: -0.95em;
+  left: 5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid var(--black);
+  z-index: -1;
+}
+.project-tools span:hover .project-tooltip,
+.project-tools span:hover .tooltip-arrow {
+  opacity: 1;
+  z-index: 1;
+}

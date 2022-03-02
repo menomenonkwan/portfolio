@@ -1,0 +1,62 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.submission-success {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.submission-message {
+  background: var(--primaryDark);
+  color: var(--white);
+  border-radius: 50%;
+  margin-top: 5em;
+  width: 100%;
+  padding: 5em;
+}
+.submission-message h3 {
+  font-size: 4em;
+  position: relative;
+}
+.submission-message h3::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  width: 50%;
+  height: 2px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(var(--secondaryColor)),
+    to(transparent)
+  );
+  background: -o-linear-gradient(left, var(--secondaryColor), transparent);
+  background: linear-gradient(to right, var(--secondaryColor), transparent);
+}
+.submission-message p {
+  font-size: 2em;
+}
+
+/* ----------------------------- */
+/* MEDIA QUERY */
+/* ----------------------------- */
+@media (min-width: 700px) {
+  .submission-message {
+    width: 75%;
+  }
+  .submission-message h3 {
+    font-size: 6em;
+  }
+}

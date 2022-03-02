@@ -1,0 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+footer {
+  text-align: center;
+  background: var(--black);
+}
+footer p {
+  color: var(--primaryColor);
+  padding: 5em 0 2em;
+  font-size: 1.4em;
+}

@@ -1,0 +1,92 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.top-menu {
+  z-index: 1111;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: var(--primaryColor);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(35%, var(--primaryColor)),
+    to(var(--primaryLight))
+  );
+  background: -o-linear-gradient(
+    left,
+    var(--primaryColor) 35%,
+    var(--primaryLight)
+  );
+  background: linear-gradient(
+    to right,
+    var(--primaryColor) 35%,
+    var(--primaryLight)
+  );
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.top-menu-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.top-menu-nav .brand {
+  padding: 0 0.25em;
+  color: var(--black);
+  font-weight: lighter;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  font-family: var(--secondaryFont), sans-serif;
+  margin-right: auto;
+  font-size: 2.75em;
+  line-height: unset;
+  display: block;
+}
+.top-menu-nav .brand:hover {
+  background: transparent;
+  color: var(--primaryDark);
+  -webkit-filter: brightness(0.75);
+  filter: brightness(0.75);
+  text-shadow: none;
+}
+.top-menu-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-menu-nav a {
+  line-height: 2.4;
+  height: 100%;
+  font-size: 2em;
+  color: var(--black);
+  display: block;
+  padding: 0 1em;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.top-menu-nav a:hover {
+  background: var(--primaryDark);
+  color: var(--primaryLight);
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}

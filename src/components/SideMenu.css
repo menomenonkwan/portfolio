@@ -1,0 +1,44 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+.side-menu {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 0.45)),
+    to(rgba(0, 0, 0, 0.6))
+  );
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.6)
+  );
+  -webkit-filter: brightness(0.9);
+  filter: brightness(0.9);
+  border-radius: 0 2em 2em 0;
+  z-index: 2;
+}
+.side-menu ul {
+  padding: 0.75em;
+}
+.side-menu li {
+  margin: 2em 0.75em;
+}
+.side-menu a {
+  display: block;
+  font-size: 2.2em;
+  line-height: 1;
+  color: var(--primaryLight);
+}
+.side-menu a:hover {
+  color: var(--secondaryColor);
+}

@@ -1,27 +1,26 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// comonents
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Home from './pages/home/Home';
+
+// styles
 import './styles/App.css';
-import './styles/mobile.css';
-import './styles/portfolio.css';
-import { Switch, Route, useLocation } from "react-router-dom";
-import Home from './components/Home';
-import Portfolio from './components/Portfolio';
-import NotFound from './components/NotFound';
-import { AnimatePresence } from 'framer-motion';
-import BurgerMenu from './components/layout/BurgerMenu';
-import Background from './components/layout/Background';
 
 function App() {
-  const location = useLocation();
   return (
-    <div className="App" >
-      <Background />
-      <AnimatePresence initial={false}> 
-        <BurgerMenu />
-        <Switch location={location} key={location.pathname}>
-          <Route exact path="/" component={Home}/>
-          <Route path="/portfolio" component={Portfolio} />
-          <Route component={NotFound} />
-        </Switch>
-      </AnimatePresence>
+    <div className="App">
+      
+      <BrowserRouter>
+        <Header />
+        
+        <Routes>
+          <Route path="/" element={ <Home /> } />
+        </Routes>
+      </BrowserRouter>
+      
+      <Footer />
     </div>
   );
 }
