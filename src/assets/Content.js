@@ -24,7 +24,7 @@ import portfolioTemp from './images/portfolioTemp.jpg';
 // import clocks from './images/clocks.jpg';
 
 // icons
-import { SiHtml5, SiCss3, SiSass, SiJavascript, SiJquery, SiReact, SiFirebase, SiWordpress, SiWix, SiVisualstudiocode, SiGraphql, SiNextdotjs, SiGatsby, SiAdobephotoshop, SiAdobeillustrator, SiFigma, SiTypescript, SiGimp, SiInkscape, SiBootstrap, SiFramer, SiStyledcomponents, SiMaterialui, SiWebpack } from 'react-icons/si';
+import { SiHtml5, SiCss3, SiSass, SiJavascript, SiJquery, SiReact, SiFirebase, SiWordpress, SiWix, SiVisualstudiocode, SiGraphql, SiNextdotjs, SiGatsby, SiAdobephotoshop, SiAdobeillustrator, SiFigma, SiTypescript, SiGimp, SiInkscape, SiBootstrap, SiFramer, SiStyledcomponents, SiMaterialui } from 'react-icons/si';
 import { DiMaterializecss } from 'react-icons/di';
 import { MdApi } from 'react-icons/md';
 
