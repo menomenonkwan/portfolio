@@ -1,5 +1,5 @@
 // featured images
-import calahan from '../assets/images/calahan.jpg';
+import calahanmusic from '../assets/images/calahanmusic.jpg';
 import drunkInTheGarage from '../assets/images/ditg.jpg';
 import roktoy from '../assets/images/roktoy.jpg';
 
@@ -33,13 +33,14 @@ const featuredProjects = [
     id: 1,
     name: 'Calahan Band Website',
     url: 'http://calahanmusic.com/',
-    image: calahan,
+    image: calahanmusic,
     code: null,
-    description: 'This site was built for the band "Calahan" using JQuery for mobile menu animations and page transitions. I also learned how to use CSS animations to create a more visually pleasing user experience, and Photoshop for logo creation, image optimization, and a nifty banner.',
+    description: 'This site was built for the band "Calahan". Rebuilt from the ground up with Next.js and React for speed, SEO, and fast performance. Animations and page transitions were crafted using the Framer Motion library. I also used Photoshop for logo refinement, image editing, and visual optimization to ensure the site looks polished across devices.',
     tools: [
+      { name: 'NextJS', icon: <SiNextdotjs />}, 
+      { name: 'React', icon: <SiReact />}, 
       { name: 'HTML5', icon: <SiHtml5 />}, 
       { name: 'CSS3', icon: <SiCss3 />}, 
-      { name: 'JQuery', icon: <SiJquery />}, 
       { name: 'Photoshop', icon: <SiAdobephotoshop />}, 
     ]
   },
@@ -346,6 +347,54 @@ const portfolioProjects = [
   //   ]
   // },
 ];
+
+// const workProjects = [
+//   {
+//     id: 1,
+//     name: '',
+//     url: '',
+//     image: ,
+//     code: ,
+//     description: '',
+//     tools: [
+//       { name: 'NextJS', icon: <SiNextdotjs />}, 
+//       { name: 'React', icon: <SiReact />}, 
+//       { name: 'HTML5', icon: <SiHtml5 />}, 
+//       { name: 'CSS3', icon: <SiCss3 />}, 
+//       { name: 'Photoshop', icon: <SiAdobephotoshop />}, 
+//     ]
+//   },
+//   {
+//     id: 2,
+//     name: '',
+//     url: '',
+//     code: '',
+//     image: ,
+//     description: '',
+//     tools: [
+//       { name: 'HTML5', icon: <SiHtml5 />}, 
+//       { name: 'CSS3', icon: <SiCss3 />}, 
+//       { name: 'JavaScript', icon: <SiJavascript />}, 
+//       { name: 'GatsbyJS', icon: <SiGatsby />}, 
+//       { name: 'Graphql', icon: <SiGraphql />}, 
+//       { name: 'Gimp', icon: <SiGimp />}, 
+//     ]
+//   },
+//   {
+//     id: 3,
+//     name: '',
+//     url: '',
+//     code: null,
+//     image: ,
+//     description: '',
+//     tools: [
+//       { name: 'Wix', icon: <SiWix />}, 
+//       { name: 'CSS3', icon: <SiCss3 />}, 
+//       { name: 'Gimp', icon: <SiGimp />}, 
+//       { name: 'Inkscape', icon: <SiInkscape />}, 
+//     ]
+//   },
+// ];
 
 const BioPartOne = () => {
   return (
