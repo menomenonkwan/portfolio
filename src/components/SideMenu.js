@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 // styles & icons
 import './SideMenu.css';
-import { FaGithub, FaCodepen, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 const variants = {
   hidden: { opacity: 0, x: '-100vw' },
@@ -31,13 +31,13 @@ export default function SideMenu() {
           </a>
         </motion.li>
         <motion.li whileHover={{scale:1.5, rotate:35}} whileTap={{scale:0.9}}>
-          <a href="https://codepen.io/menomenonkwan" target="_blank" rel="noreferrer">
-            <FaCodepen />
-          </a>
-          </motion.li>
-        <motion.li whileHover={{scale:1.5, rotate:35}} whileTap={{scale:0.9}}>
           <a href="https://www.linkedin.com/in/brannon-lee/" target="_blank" rel="noreferrer">
             <FaLinkedin />
+          </a>
+        </motion.li>
+        <motion.li whileHover={{scale:1.5, rotate:35}} whileTap={{scale:0.9}}>
+          <a href="mailto:brannon.r.lee@gmail.com?subject=BrannonLee - Web-Development Inquiry" target="_blank" rel="noreferrer">
+            <FaEnvelope />
           </a>
         </motion.li>
       </ul>

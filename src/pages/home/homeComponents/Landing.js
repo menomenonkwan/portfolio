@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 // styles & images & icons
 import './Landing.css';
 import backgroundImage from '../../../assets/images/background_image.jpg';
-import { FaGithub, FaLinkedin, FaCodepen, FaEnvelope, FaArrowCircleDown } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowCircleDown } from 'react-icons/fa';
 
 const iconVariants = {
   scale:1.5, rotate:45, transition: {duration: 0.25}
@@ -52,9 +52,6 @@ export default function Landing() {
             <ul>
               <motion.li whileHover={iconVariants} whileTap={{scale: 0.9}}>
                 <a href="https://github.com/menomenonkwan" target="_blank" rel="noreferrer"><FaGithub /></a>
-              </motion.li>
-              <motion.li whileHover={iconVariants} whileTap={{scale: 0.9}}>
-                <a href="https://codepen.io/menomenonkwan" target="_blank" rel="noreferrer"><FaCodepen /></a>
               </motion.li>
               <motion.li whileHover={iconVariants} whileTap={{scale: 0.9}}>
                 <a href="https://www.linkedin.com/in/brannon-lee/" target="_blank" rel="noreferrer"><FaLinkedin /></a>

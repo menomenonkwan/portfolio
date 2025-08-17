@@ -4,23 +4,23 @@ import drunkInTheGarage from '../assets/images/ditg.jpg';
 import roktoy from '../assets/images/roktoy.jpg';
 
 // project images
-import bakeryShop from '../assets/images/bakery.jpg';
+// import bakeryShop from '../assets/images/bakery.jpg';
 import glasses from '../assets/images/glasses.jpg';
 import musician from '../assets/images/musician.jpg';
-import rentals from './images/rentals.jpg';
+// import rentals from './images/rentals.jpg';
 import clothing from './images/clothing.jpg';
 import cow from './images/cow.jpg';
-import mymoney from './images/mymoney.jpg';
+// import mymoney from './images/mymoney.jpg';
 import nytimes from './images/nytimes.jpg';
 import recipekeeper from './images/recipekeeper.jpg';
-import recipies from './images/recipies.jpg';
-import reviews from './images/reviews.jpg';
-import weather from './images/weather.jpg';
+// import recipies from './images/recipies.jpg';
+// import reviews from './images/reviews.jpg';
+// import weather from './images/weather.jpg';
 import yoga from './images/yoga.jpg';
 import portfolioTemp from './images/portfolioTemp.jpg';
 // import photostudio from './images/photostudio.jpg';
 // import restaurant from './images/restaurant.jpg';
-// import travel from './images/travel.jpg';
+import travel from './images/travel.jpg';
 // import clocks from './images/clocks.jpg';
 
 // icons
@@ -77,38 +77,23 @@ const featuredProjects = [
 ];
 
 const portfolioProjects = [
-  {
-    id: 1,
-    name: 'Bakery Shop',
-    image: bakeryShop,
-    description: 'A sweet tasting responsive bakery shop website that I built using SASS in a React App. The fully functional cart is made with the useContext hook to eliminate prop drilling. I made sure to heavily invoke the use of re-usable components as a way to continually debloat my coding.',
-    url: 'https://menomenonkwan.github.io/bakery-shop/',
-    code: 'https://github.com/menomenonkwan/bakery-shop',
-    tools: [
-      { name: 'React', icon: <SiReact />}, 
-      { name: 'SASS', icon: <SiSass />}, 
-      { name: 'HTML5', icon: <SiHtml5 />}, 
-      { name: 'CSS3', icon: <SiCss3 />}, 
-      { name: 'JavaScript', icon: <SiJavascript />},
-    ]
-  },
+  // {
+  //   id: 1,
+  //   name: 'Bakery Shop',
+  //   image: bakeryShop,
+  //   description: 'A sweet tasting responsive bakery shop website that I built using SASS in a React App. The fully functional cart is made with the useContext hook to eliminate prop drilling. I made sure to heavily invoke the use of re-usable components as a way to continually debloat my coding.',
+  //   url: 'https://menomenonkwan.github.io/bakery-shop/',
+  //   code: 'https://github.com/menomenonkwan/bakery-shop',
+  //   tools: [
+  //     { name: 'React', icon: <SiReact />}, 
+  //     { name: 'SASS', icon: <SiSass />}, 
+  //     { name: 'HTML5', icon: <SiHtml5 />}, 
+  //     { name: 'CSS3', icon: <SiCss3 />}, 
+  //     { name: 'JavaScript', icon: <SiJavascript />},
+  //   ]
+  // },
   {
     id: 2,
-    name: 'Glasses Store',
-    image: glasses,
-    description: 'This demo website was built in React with the Bootstrap library to streamline design and layout. I wanted to implement some of it\'s popular features such as accordions, carousels, and modals in a responsive design. Easy Peasy',
-    url: 'https://menomenonkwan.github.io/glasses-store-website/',
-    code: 'https://github.com/menomenonkwan/glasses-store-website',
-    tools: [
-      { name: 'React', icon: <SiReact />}, 
-      { name: 'Bootstrap5', icon: <SiBootstrap />}, 
-      { name: 'HTML5', icon: <SiHtml5 />}, 
-      { name: 'CSS3', icon: <SiCss3 />}, 
-      { name: 'JavaScript', icon: <SiJavascript />},
-    ]
-  },
-  {
-    id: 3,
     name: 'Studio Musician',
     image: musician,
     description: 'This responsive UI Design was made in an attempt to learn the Materialize CSS library and how to implement some of it\'s cool features such as input handling, parallax, tabs, and responsive image handling.',
@@ -121,37 +106,7 @@ const portfolioProjects = [
     ]
   },
   {
-    id: 4,
-    name: 'Rental App',
-    image: rentals,
-    description: 'With a focus on UI Design, this is a simple rental app built with Bootstrap and SASS. The animations are made with the GSAP animiation library, in my first attempt to explore it\'s capabilities.',
-    url: 'https://menomenonkwan.github.io/airbnb-rentals/',
-    code: 'https://github.com/menomenonkwan/airbnb-rentals',
-    tools: [
-      { name: 'React', icon: <SiReact />}, 
-      { name: 'Bootstrap5', icon: <SiBootstrap />}, 
-      { name: 'HTML5', icon: <SiHtml5 />}, 
-      { name: 'CSS3', icon: <SiCss3 />}, 
-      { name: 'JavaScript', icon: <SiJavascript />},
-    ]
-  },
-  {
-    id: 5,
-    name: 'Finance Tracker',
-    image: mymoney,
-    description: 'I learned how to incorporate Firebase authorization and data in a React app while keeping data secure and viewable by only it\'s associated user. I made use of React\'s useContext hook to handle user accessiblity and implement a light/dark mode option.',
-    url: 'https://mymoneyexpenses.web.app/login',
-    code: 'https://github.com/menomenonkwan/my-money',
-    tools: [
-      { name: 'React', icon: <SiReact />}, 
-      { name: 'HTML5', icon: <SiHtml5 />}, 
-      { name: 'CSS3', icon: <SiCss3 />}, 
-      { name: 'JavaScript', icon: <SiJavascript />}, 
-      { name: 'Firebase', icon: <SiFirebase />}, 
-    ]
-  },
-  {
-    id: 6,
+    id: 3,
     name: 'Clothing Store',
     image: clothing,
     description: 'Built with React (with products from the FakeStore API). React Hooks are used to handle a fully functioning shopping cart. I also tested the waters with Styled Components and used Framer Motion to animated component mounting & unmounting.',
@@ -165,6 +120,51 @@ const portfolioProjects = [
       { name: 'StyledComponents', icon: <SiStyledcomponents />}, 
       { name: 'FramerMotion', icon: <SiFramer />}, 
       { name: 'API', icon: <MdApi />}, 
+    ]
+  },
+  // {
+  //   id: 4,
+  //   name: 'Rental App',
+  //   image: rentals,
+  //   description: 'With a focus on UI Design, this is a simple rental app built with Bootstrap and SASS. The animations are made with the GSAP animiation library, in my first attempt to explore it\'s capabilities.',
+  //   url: 'https://menomenonkwan.github.io/airbnb-rentals/',
+  //   code: 'https://github.com/menomenonkwan/airbnb-rentals',
+  //   tools: [
+  //     { name: 'React', icon: <SiReact />}, 
+  //     { name: 'Bootstrap5', icon: <SiBootstrap />}, 
+  //     { name: 'HTML5', icon: <SiHtml5 />}, 
+  //     { name: 'CSS3', icon: <SiCss3 />}, 
+  //     { name: 'JavaScript', icon: <SiJavascript />},
+  //   ]
+  // },
+  // {
+  //   id: 5,
+  //   name: 'Finance Tracker',
+  //   image: mymoney,
+  //   description: 'I learned how to incorporate Firebase authorization and data in a React app while keeping data secure and viewable by only it\'s associated user. I made use of React\'s useContext hook to handle user accessiblity and implement a light/dark mode option.',
+  //   url: 'https://mymoneyexpenses.web.app/login',
+  //   code: 'https://github.com/menomenonkwan/my-money',
+  //   tools: [
+  //     { name: 'React', icon: <SiReact />}, 
+  //     { name: 'HTML5', icon: <SiHtml5 />}, 
+  //     { name: 'CSS3', icon: <SiCss3 />}, 
+  //     { name: 'JavaScript', icon: <SiJavascript />}, 
+  //     { name: 'Firebase', icon: <SiFirebase />}, 
+  //   ]
+  // },
+  {
+    id: 6,
+    name: 'Glasses Store',
+    image: glasses,
+    description: 'This demo website was built in React with the Bootstrap library to streamline design and layout. I wanted to implement some of it\'s popular features such as accordions, carousels, and modals in a responsive design. Easy Peasy',
+    url: 'https://menomenonkwan.github.io/glasses-store-website/',
+    code: 'https://github.com/menomenonkwan/glasses-store-website',
+    tools: [
+      { name: 'React', icon: <SiReact />}, 
+      { name: 'Bootstrap5', icon: <SiBootstrap />}, 
+      { name: 'HTML5', icon: <SiHtml5 />}, 
+      { name: 'CSS3', icon: <SiCss3 />}, 
+      { name: 'JavaScript', icon: <SiJavascript />},
     ]
   },
   {
@@ -211,56 +211,56 @@ const portfolioProjects = [
       { name: 'Firebase', icon: <SiFirebase />}, 
     ]
   },
-  {
-    id: 10,
-    name: 'Food Blog',
-    image: reviews,
-    description: 'Built to help further my understanding of GatsbyJS and it\'s many plugins, such as responsive images. This was also an introduction to GraphQL and it\'s query capabilities. I made use of Framer Motion and Material UI to animate and style components.',
-    url: 'https://restaurantreviewsmain.gatsbyjs.io/',
-    code: 'https://github.com/menomenonkwan/restaurant-reviews',
-    tools: [
-      { name: 'GatsbyJS', icon: <SiGatsby />}, 
-      { name: 'React', icon: <SiReact />}, 
-      { name: 'HTML5', icon: <SiHtml5 />}, 
-      { name: 'CSS3', icon: <SiCss3 />}, 
-      { name: 'JavaScript', icon: <SiJavascript />}, 
-      { name: 'Graphql', icon: <SiGraphql />}, 
-      { name: 'FramerMotion', icon: <SiFramer />}, 
-      { name: 'Materialui', icon: <SiMaterialui />}, 
-    ]
-  },
-  {
-    id: 11,
-    name: 'Weather App',
-    image: weather,
-    description: 'Dynamically populated information with Vanilla JavaScript and use of the openweather API.I also learned how to make calculations in JS in transferring Celcius into Fahrenheit. There\'s also a spiffy JavaScript built and operated clock that makes use of built in JS timing functions. Lot\'s and lot\'s of calculations in this one.',
-    url: 'https://menomenonkwan.github.io/weather-app/',
-    code: 'https://github.com/menomenonkwan/weather-app',
-    tools: [
-      { name: 'HTML5', icon: <SiHtml5 />}, 
-      { name: 'CSS3', icon: <SiCss3 />}, 
-      { name: 'JavaScript', icon: <SiJavascript />}, 
-      { name: 'API', icon: <MdApi />}, 
-    ]
-  },
-  {
-    id: 12,
-    name: 'Recipe Finder',
-    image: recipies,
-    description: 'This was a fun project. I used the edamam API to populate user searched recipies. There was a mixture of Material UI, Styled Components, and Framer Motion to style and animate different components throughouth the app.' ,
-    url: 'https://menomenonkwan.github.io/recipe-roulette/',
-    code: 'https://github.com/menomenonkwan/recipe-roulette',
-    tools: [
-      { name: 'React', icon: <SiReact />}, 
-      { name: 'HTML5', icon: <SiHtml5 />}, 
-      { name: 'CSS3', icon: <SiCss3 />},      
-      { name: 'JavaScript', icon: <SiJavascript />},  
-      { name: 'FramerMotion', icon: <SiFramer />}, 
-      { name: 'Materialui', icon: <SiMaterialui />}, 
-      { name: 'API', icon: <MdApi />}, 
-      { name: 'StyledComponents', icon: <SiStyledcomponents />}, 
-    ]
-  },
+  // {
+  //   id: 10,
+  //   name: 'Food Blog',
+  //   image: reviews,
+  //   description: 'Built to help further my understanding of GatsbyJS and it\'s many plugins, such as responsive images. This was also an introduction to GraphQL and it\'s query capabilities. I made use of Framer Motion and Material UI to animate and style components.',
+  //   url: 'https://restaurantreviewsmain.gatsbyjs.io/',
+  //   code: 'https://github.com/menomenonkwan/restaurant-reviews',
+  //   tools: [
+  //     { name: 'GatsbyJS', icon: <SiGatsby />}, 
+  //     { name: 'React', icon: <SiReact />}, 
+  //     { name: 'HTML5', icon: <SiHtml5 />}, 
+  //     { name: 'CSS3', icon: <SiCss3 />}, 
+  //     { name: 'JavaScript', icon: <SiJavascript />}, 
+  //     { name: 'Graphql', icon: <SiGraphql />}, 
+  //     { name: 'FramerMotion', icon: <SiFramer />}, 
+  //     { name: 'Materialui', icon: <SiMaterialui />}, 
+  //   ]
+  // },
+  // {
+  //   id: 11,
+  //   name: 'Weather App',
+  //   image: weather,
+  //   description: 'Dynamically populated information with Vanilla JavaScript and use of the openweather API.I also learned how to make calculations in JS in transferring Celcius into Fahrenheit. There\'s also a spiffy JavaScript built and operated clock that makes use of built in JS timing functions. Lot\'s and lot\'s of calculations in this one.',
+  //   url: 'https://menomenonkwan.github.io/weather-app/',
+  //   code: 'https://github.com/menomenonkwan/weather-app',
+  //   tools: [
+  //     { name: 'HTML5', icon: <SiHtml5 />}, 
+  //     { name: 'CSS3', icon: <SiCss3 />}, 
+  //     { name: 'JavaScript', icon: <SiJavascript />}, 
+  //     { name: 'API', icon: <MdApi />}, 
+  //   ]
+  // },
+  // {
+  //   id: 12,
+  //   name: 'Recipe Finder',
+  //   image: recipies,
+  //   description: 'This was a fun project. I used the edamam API to populate user searched recipies. There was a mixture of Material UI, Styled Components, and Framer Motion to style and animate different components throughouth the app.' ,
+  //   url: 'https://menomenonkwan.github.io/recipe-roulette/',
+  //   code: 'https://github.com/menomenonkwan/recipe-roulette',
+  //   tools: [
+  //     { name: 'React', icon: <SiReact />}, 
+  //     { name: 'HTML5', icon: <SiHtml5 />}, 
+  //     { name: 'CSS3', icon: <SiCss3 />},      
+  //     { name: 'JavaScript', icon: <SiJavascript />},  
+  //     { name: 'FramerMotion', icon: <SiFramer />}, 
+  //     { name: 'Materialui', icon: <SiMaterialui />}, 
+  //     { name: 'API', icon: <MdApi />}, 
+  //     { name: 'StyledComponents', icon: <SiStyledcomponents />}, 
+  //   ]
+  // },
   {
     id: 13,
     name: 'Yoga Timer App',
@@ -278,6 +278,20 @@ const portfolioProjects = [
   },
   {
     id: 14,
+    name: 'Travel Company',
+    image: travel,
+    description: 'This was one of my early React projects, that introduced me to React Hooks and in animating component mounting and unmounting with Framer Motion. I also learned how to use a video as a landing page background and how to handle discrepency of page and video loading times.',
+    url: 'https://menomenonkwan.github.io/travel-co/',
+    code: 'https://github.com/menomenonkwan/travel-co',
+    tools: [
+      { name: 'React', icon: <SiReact />}, 
+      { name: 'HTML5', icon: <SiHtml5 />}, 
+      { name: 'CSS3', icon: <SiCss3 />}, 
+      { name: 'FramerMotion', icon: <SiFramer />}, 
+    ]
+  },
+  {
+    id: 15,
     name: 'Portfolio Layout',
     image: portfolioTemp,
     description: 'Primarily working on design skills and CSS with this one. A simple portfolio template with a JavaScript controlled menu.',
@@ -289,21 +303,7 @@ const portfolioProjects = [
       { name: 'JavaScript', icon: <SiJavascript />}, 
     ]
   },
-  // {
-  //   id: 15,
-  //   name: 'Travel Company',
-  //   image: travel,
-  //   description: 'This was one of my early React projects, that introduced me to React Hooks and in animating component mounting and unmounting with Framer Motion. I also learned how to use a video as a landing page background and how to handle discrepency of page and video loading times.',
-  //   url: 'https://menomenonkwan.github.io/travel-co/',
-  //   code: 'https://github.com/menomenonkwan/travel-co',
-  //   tools: [
-  //     { name: 'React', icon: <SiReact />}, 
-  //     { name: 'HTML5', icon: <SiHtml5 />}, 
-  //     { name: 'CSS3', icon: <SiCss3 />}, 
-  //     { name: 'FramerMotion', icon: <SiFramer />}, 
-  //   ]
-  // },
-    // {
+  //   {
   //   id: 16,
   //   name: 'Restaurant Website',
   //   image: restaurant,
@@ -314,10 +314,10 @@ const portfolioProjects = [
   //     { name: 'HTML5', icon: <SiHtml5 />}, 
   //     { name: 'CSS3', icon: <SiCss3 />}, 
   //     { name: 'JavaScript', icon: <SiJavascript />}, 
-  //     { name: 'Webpack', icon: <SiWebpack />}, 
+  //     // { name: 'Webpack', icon: <SiWebpack />}, 
   //   ]
   // },
-    // { 
+  //   { 
   //   id: 17,
   //   name: 'Photo Studio',
   //   image: photostudio,
@@ -333,7 +333,7 @@ const portfolioProjects = [
   //     { name: 'API', icon: <MdApi />}, 
   //   ]
   // },
-    // {
+  //   {
   //   id: 18,
   //   name: 'World Clocks',
   //   image: clocks,
