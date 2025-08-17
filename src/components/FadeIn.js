@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const FadeInWhenVisible = ({ children }) => {
+const FadeInWhenVisible = ({ addedClass, children }) => {
   return (
     <motion.div
       initial="hidden"
@@ -11,6 +11,7 @@ const FadeInWhenVisible = ({ children }) => {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 40 }
       }}
+      className={addedClass}
     >
       {children}
     </motion.div>

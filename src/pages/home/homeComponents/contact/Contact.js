@@ -1,4 +1,4 @@
-import { FadeInAndSlideLeftVisible, FadeInAndSlideRightVisible } from '../../../../components/FadeIn';
+import { FadeInWhenVisible } from '../../../../components/FadeIn';
 import ContactList from './ContactList';
 
 // styles & icons
@@ -12,9 +12,9 @@ export default function Contact() {
         <h4>Say Hi!</h4>
         <div className="contact-wrapper">
 
-          <FadeInAndSlideLeftVisible addedClass='contact-list' >
+          <FadeInWhenVisible addedClass='contact-list' >
             <ContactList />
-          </FadeInAndSlideLeftVisible>
+          </FadeInWhenVisible>
         </div>
       </div>
     </section>
